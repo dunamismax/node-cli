@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="Node.js CLI & API Monorepo" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/javascript/Vanilla-JS-Logo.png" alt="Node.js CLI & API Development Monorepo" width="200" />
 </p>
 
 <p align="center">
@@ -9,9 +9,10 @@
 </p>
 
 <p align="center">
+  <a href="#yargs-cli---powerful-command-line-interface"><img src="https://img.shields.io/badge/CLI_Framework-Yargs-FF6B6B.svg" alt="Yargs CLI"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
-  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-4.25+-000000.svg?logo=fastify" alt="Fastify Version"></a>
-  <a href="https://yargs.js.org/"><img src="https://img.shields.io/badge/CLI-Yargs-FF6B6B.svg?logo=terminal" alt="Yargs CLI"></a>
+  <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Fastify-5.4+-000000.svg?logo=fastify" alt="Fastify Version"></a>
+  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.18+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Pure_JS-ES2022+-F7DF1E.svg?logo=javascript" alt="Pure JavaScript"></a>
   <a href="https://eslint.org/"><img src="https://img.shields.io/badge/Code_Quality-ESLint-4B32C3.svg?logo=eslint" alt="ESLint"></a>
   <a href="https://prettier.io/"><img src="https://img.shields.io/badge/Code_Format-Prettier-F7B93E.svg?logo=prettier" alt="Prettier"></a>
@@ -31,12 +32,14 @@ A production-ready Node.js monorepo featuring high-performance RESTful APIs and 
 
 ## Features
 
-- **High-Performance APIs** with Fastify, MongoDB, and VineJS validation
-- **Interactive CLI Tools** with Yargs, Enquirer prompts, and beautiful styling
-- **Shared Utilities** including API responses, logging, validation, and common helpers
-- **Real Applications** RESTful API server and feature-rich CLI with tech stack explorer
-- **Development Tools** ESLint, Prettier, and pnpm workspaces for seamless development
-- **Production Ready** environment configuration, deployment scripts, and security best practices
+- **High-Performance APIs** - Fastify server with MongoDB, VineJS validation, and rate limiting
+- **Interactive CLI Tools** - Yargs argument parsing with Enquirer prompts and beautiful styling
+- **Shared Utilities** - Centralized API responses, logging, validation, and common helpers
+- **Real Applications** - RESTful API server and feature-rich CLI with tech stack explorer
+- **Modern Toolchain** - ESLint, Prettier, pnpm workspaces for seamless development
+- **Production Ready** - Environment configuration, deployment scripts, and security best practices
+- **Zero Dependencies** - Pure JavaScript with minimal external dependencies
+- **Monorepo Architecture** - Shared packages and independent applications
 
 ## Project Structure
 
@@ -54,7 +57,7 @@ A production-ready Node.js monorepo featuring high-performance RESTful APIs and 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="100" />
+  <img src="https://github.com/dunamismax/images/blob/main/javascript/JavaScript-logo.png" alt="JavaScript" width="100" />
 </p>
 
 ## Quick Start
@@ -81,13 +84,37 @@ cd apps/node-cli && node src/index.js --help
 
 **Access:** API server at `http://localhost:3000`, CLI tools available via command line
 
+## Yargs CLI - Powerful Command-Line Interface
+
+Yargs powers the interactive command-line interface, providing argument parsing, command routing, and help generation for professional CLI applications.
+
+### Key Features
+
+- **Argument Parsing** - Robust command-line argument parsing with validation
+- **Interactive Prompts** - Enquirer integration for beautiful interactive experiences
+- **Command Routing** - Structured command hierarchy with sub-commands
+- **Help Generation** - Automatic help text generation and usage examples
+- **Input Validation** - Built-in validation for arguments and options
+- **Styling & Feedback** - Chalk colors, Ora spinners, and Figlet banners
+
+### CLI Capabilities
+
+| Feature             | Implementation                        | Benefits                        |
+| ------------------- | ------------------------------------- | ------------------------------- |
+| Tech Stack Explorer | Interactive browser with filtering    | Discover technologies and tools |
+| Project Tools       | Project management and utilities      | Streamline development workflow |
+| Utility Functions   | ID generation, validation, formatting | Common development tasks        |
+| API Integration     | Direct API calls from CLI             | Unified development experience  |
+| Beautiful Output    | Styled text, spinners, progress bars  | Professional user experience    |
+
 ## Tech Stack
 
 **Core:** Node.js 18+, Pure JavaScript ES Modules, Fastify, MongoDB Native Driver
 **CLI:** Yargs argument parser, Enquirer interactive prompts, Chalk styling, Ora spinners
-**Shared:** VineJS validation, API response utilities, logging helpers
+**API:** VineJS validation, CORS, helmet security, rate limiting middleware
+**Shared:** Centralized utilities, logging helpers, response formatting
 **Tools:** ESLint, Prettier, pnpm workspaces, environment management
-**Deployment:** Linux, systemd, Caddy reverse proxy
+**Deployment:** Linux, systemd process management, Caddy reverse proxy
 
 ## Architecture
 
@@ -103,107 +130,62 @@ cd apps/node-cli && node src/index.js --help
 ```bash
 # Development
 pnpm dev             # Start all applications in development mode
+pnpm dev:api         # Start only API server
+pnpm dev:cli         # Run CLI in development mode
 pnpm install         # Install all workspace dependencies
 
 # Code Quality
 pnpm lint            # Lint all JavaScript files with ESLint
+pnpm lint:fix        # Auto-fix linting issues
 pnpm format          # Format code with Prettier
 pnpm format:check    # Check code formatting
 
 # Production
 pnpm build           # Build all packages (no compilation needed for JS)
 pnpm start           # Start all applications in production mode
+pnpm clean           # Clean temporary files and artifacts
+
+# Database
+pnpm db:init         # Initialize MongoDB database
+pnpm db:seed         # Seed database with sample data
+pnpm db:reset        # Reset and reseed database
 ```
 
+---
+
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
 </p>
 
 ## Key Features
 
-**Fastify API Server:** High-performance HTTP server with plugins for CORS, helmet, rate limiting
-**MongoDB Integration:** Native driver with connection pooling and error handling
-**VineJS Validation:** Fast and lightweight schema validation for API endpoints
-**Interactive CLI:** Beautiful command-line interface with prompts, spinners, and styled output
-**Shared Utilities:** Centralized API response formatting, logging, and validation helpers
-**Development Tools:** Hot reload with --watch, code formatting, and quality checks
+**High Performance:** Fastify HTTP server with optimized plugins, MongoDB native driver, connection pooling, efficient request handling
 
-## Environment Setup
+**Interactive CLI:** Beautiful command-line interface with Yargs parsing, Enquirer prompts, Chalk styling, Ora spinners, comprehensive help system
 
-**API Server** (`.env`):
+**Shared Architecture:** Centralized utilities for API responses, validation helpers, logging system, configuration management, code reusability
 
-```bash
-MONGODB_URI=mongodb://localhost:27017
-DB_NAME=node_cli_db
-PORT=3000
-HOST=0.0.0.0
-```
+**Production Ready:** Environment-based configuration, security middleware, rate limiting, deployment scripts, systemd service management
 
-**CLI Application** requires no additional configuration and works out of the box
+## Applications
 
-## Production Deployment
+**API Server (Node.js + Fastify):**
 
-**Quick Deploy:**
+- High-performance RESTful API with optimized middleware
+- MongoDB integration with native driver and connection pooling
+- VineJS schema validation for request/response data
+- CORS, helmet security headers, and rate limiting
+- Health check endpoints and monitoring capabilities
+- Environment-based configuration and secrets management
 
-```bash
-pnpm build    # Prepare for production
-pnpm start    # Production mode
-```
+**CLI Application (Yargs + Enquirer):**
 
-**Self-Hosting:** Use systemd services and Caddy reverse proxy for production deployment on Linux servers. Applications are configured for environment-based settings and secure database connections.
-
-## Code Examples
-
-**Using Shared API Responses:**
-
-```javascript
-import {
-  createSuccessResponse,
-  createErrorResponse,
-} from "@node-cli/shared-utils";
-
-// Success response
-return createSuccessResponse({ users: allUsers });
-
-// Error response
-return createErrorResponse("User not found");
-```
-
-**CLI Interactive Prompts:**
-
-```javascript
-import enquirer from "enquirer";
-const { Select, Input } = enquirer;
-
-const prompt = new Select({
-  name: "action",
-  message: "What would you like to do?",
-  choices: ["Create", "Update", "Delete"],
-});
-
-const answer = await prompt.run();
-```
-
-**Fastify Route with Validation:**
-
-```javascript
-import { createUserSchema } from "../schemas/user.js";
-
-server.post("/", async (request, reply) => {
-  const validatedData = await createUserSchema.validate(request.body);
-  // Handle validated data
-});
-```
-
-**MongoDB Operations:**
-
-```javascript
-import { getDatabase } from "../database.js";
-
-const db = getDatabase();
-const users = db.collection("users");
-const allUsers = await users.find({}).toArray();
-```
+- Interactive tech stack explorer with filtering and search
+- Project management tools and development utilities
+- Beautiful terminal interface with colors and animations
+- Argument parsing with validation and help generation
+- Direct integration with API server for data operations
+- Utility functions for common development tasks
 
 ## CLI Commands
 
@@ -213,6 +195,7 @@ const allUsers = await users.find({}).toArray();
 node src/index.js tech-stack --interactive    # Interactive tech stack browser
 node src/index.js tech-stack --list          # List all technologies
 node src/index.js tech-stack --category cli  # Filter by category
+node src/index.js tech-stack --search node   # Search technologies
 ```
 
 **Project Tools:**
@@ -220,6 +203,7 @@ node src/index.js tech-stack --category cli  # Filter by category
 ```bash
 node src/index.js project --interactive  # Interactive project manager
 node src/index.js project --info         # Show project information
+node src/index.js project --stats        # Display project statistics
 ```
 
 **Utility Tools:**
@@ -228,43 +212,80 @@ node src/index.js project --info         # Show project information
 node src/index.js utils --interactive    # Interactive utility browser
 node src/index.js utils --generate id    # Generate unique ID
 node src/index.js utils --validate email # Validate email address
+node src/index.js utils --format json    # Format JSON data
 ```
 
 ## API Endpoints
 
-**Health Checks:**
+**Health & Monitoring:**
 
 ```bash
 GET /health        # Basic health check
-GET /health/ready  # Readiness check
+GET /health/ready  # Readiness check with database
+GET /health/live   # Liveness check
 ```
 
-**Tech Stack:**
+**Tech Stack Management:**
 
 ```bash
 GET /api/tech-stack            # Get full tech stack
 GET /api/tech-stack/categories # Get all categories
-GET /api/tech-stack/category/cli # Get technologies by category
+GET /api/tech-stack/category/:name # Get technologies by category
+POST /api/tech-stack           # Add new technology
 ```
 
 **User Management:**
 
 ```bash
-GET    /api/users     # Get all users
-POST   /api/users     # Create user
+GET    /api/users     # Get all users with pagination
+POST   /api/users     # Create user with validation
 GET    /api/users/:id # Get user by ID
-PUT    /api/users/:id # Update user
+PUT    /api/users/:id # Update user with validation
 DELETE /api/users/:id # Delete user
 ```
+
+## Environment Setup
+
+**API Server Configuration:**
+
+```bash
+MONGODB_URI=mongodb://localhost:27017
+DB_NAME=node_cli_db
+PORT=3000
+HOST=0.0.0.0
+NODE_ENV=development
+```
+
+**CLI Application Configuration:**
+
+The CLI application requires no additional configuration and works out of the box. Optional settings can be configured through command-line arguments or environment variables.
+
+## Production Deployment
+
+**Quick Deploy:**
+
+```bash
+pnpm build    # Prepare for production
+pnpm start    # Start production mode
+```
+
+**Self-Hosting:** Use systemd services and Caddy reverse proxy for production deployment on Linux servers. Applications are configured for environment-based settings and secure database connections.
 
 ## Contributing
 
 1. Fork and create feature branch
-2. Make changes following existing patterns
-3. Run `pnpm lint && pnpm format`
-4. Submit pull request
+2. Make changes following existing patterns and architecture
+3. Run `pnpm lint && pnpm format && pnpm build`
+4. Test changes in both development and production modes
+5. Submit pull request with clear description
 
 **Code Style:** Uses ESLint and Prettier with shared configurations from `@node-cli/shared-config`
+
+## Author
+
+<img src="https://gravatar.com/nachounabashed3164d5c433" alt="dunamismax" width="80" style="border-radius: 50%;" />
+
+**dunamismax** - Creator and maintainer of this Node.js CLI & API Development Monorepo.
 
 ## License
 
@@ -294,5 +315,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
 </p>
