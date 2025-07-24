@@ -281,12 +281,6 @@ pnpm start    # Start production mode
 
 **Code Style:** Uses ESLint and Prettier with shared configurations from `@node-cli/shared-config`
 
-## Author
-
-<img src="https://gravatar.com/nachounabashed3164d5c433" alt="dunamismax" width="80" style="border-radius: 50%;" />
-
-**dunamismax** - Creator and maintainer of this Node.js CLI & API Development Monorepo.
-
 ## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
