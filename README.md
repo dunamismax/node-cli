@@ -89,10 +89,6 @@ cd apps/node-cli && node src/index.js --help
 **Tools:** ESLint, Prettier, pnpm workspaces, environment management
 **Deployment:** Linux, systemd, Caddy reverse proxy
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
-</p>
-
 ## Architecture
 
 **Monorepo Structure:** pnpm workspaces with shared packages and independent applications
@@ -118,6 +114,10 @@ pnpm format:check    # Check code formatting
 pnpm build           # Build all packages (no compilation needed for JS)
 pnpm start           # Start all applications in production mode
 ```
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+</p>
 
 ## Key Features
 
