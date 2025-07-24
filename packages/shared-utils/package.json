@@ -1,0 +1,20 @@
+{
+  "name": "@node-cli/shared-utils",
+  "version": "1.0.0",
+  "description": "Shared utilities for Node CLI monorepo",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./constants": "./src/constants.js"
+  },
+  "scripts": {
+    "build": "echo \"No build step needed for JavaScript\"",
+    "dev": "echo \"No watch needed for JavaScript\"",
+    "lint": "eslint src --ext .js",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "@node-cli/shared-config": "workspace:*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@node-cli/shared-config",
+  "version": "1.0.0",
+  "description": "Shared configuration for Node CLI monorepo",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint-preset.js"
+  },
+  "dependencies": {
+    "@eslint/js": "^8.55.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.55.0"
+  }
+}

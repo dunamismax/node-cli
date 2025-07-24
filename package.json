@@ -1,0 +1,27 @@
+{
+  "name": "node-cli-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A high-performance Node.js monorepo featuring a RESTful API and CLI application",
+  "author": "dunamismax <dunamismax@tutamail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dunamismax/node-cli.git"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

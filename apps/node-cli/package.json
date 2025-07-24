@@ -1,0 +1,28 @@
+{
+  "name": "@node-cli/cli",
+  "version": "1.0.0",
+  "description": "Interactive command-line interface built with Yargs and Enquirer",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "node-cli": "./src/index.js"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "build": "echo \"No build step needed for JavaScript\"",
+    "start": "node src/index.js",
+    "lint": "eslint src --ext .js",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@node-cli/shared-utils": "workspace:*",
+    "yargs": "^17.7.2",
+    "enquirer": "^2.4.1",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "@node-cli/shared-config": "workspace:*"
+  }
+}
